@@ -13,6 +13,11 @@ const confirm = document.querySelector(".confirm");
 const create = document.querySelector(".create");
 const cv = document.querySelector(".cv");
 
+// signin.style.display = "none";
+// resume.style.display = "flex";
+// // document.querySelector(".main").style.display = "none";
+// // document.querySelector(".reumeswap").style.display = "none";
+// // document.querySelector(".section-two").style.display = "none";
 
 
 button.addEventListener('click', () => {

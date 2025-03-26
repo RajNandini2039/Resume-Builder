@@ -271,6 +271,7 @@
 
                <button type="submit" class="create" style="width:10rem;">Create cv</button>
                <button class="btn" style="width:10rem;" onclick="printDiv()">Print</button>
+               <button class="ai-button create" >Open AI-Chatbot</button>
     </div>
 
 <div class="cv" style="display: none;">
@@ -285,8 +286,22 @@
 
         
     </div>
-    
+  
 </div>
+
+<div class="chat-container">
+        <div class="chat-header">
+            <h3>AI Chatbot</h3>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="bot-message">Hello! How can I help you today?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button class="ai-send">Send</button>
+        </div>
+        <button class="close-btn">close</button>
+    </div>
 
 
 <script>
@@ -299,7 +314,10 @@
         document.body.innerHTML = originalContent; // Restore the original page
     }
 </script>
+
 <script src="script.js"></script>
+<script src="chatbot.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.min.js"></script>
 
 </body>
 
